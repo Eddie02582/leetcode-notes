@@ -9,6 +9,7 @@ Given an integer array `nums` with distinct elements, return all possible permut
 - Managing recursion depth
 
 ## Standard Backtracking — Interview Version
+``` python
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         results = []
@@ -30,15 +31,18 @@ class Solution:
 
         backtrack()
         return results
-
+```
 ## Complexity Analysis
 - Time: O(n!)
 - Space: O(n) recursion + O(n!) output
+---
 
 ## Interview Talking Points
 - Use a `used` array to track elements already in the path
 - DFS explores all possible orders
 - Backtracking template is universal
+
+---
 
 ## Key Takeaways
 - Permutations are order-sensitive combinations
